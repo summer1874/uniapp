@@ -1,0 +1,1 @@
+<view class="receiving-content">我是收货页面<button type="primary" data-event-opts="{{[['tap',[['navigationToDetails',['$event']]]]]}}" bindtap="__e">详情</button></view>
