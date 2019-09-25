@@ -1,8 +1,8 @@
 <template>
   <view class="login-contenr" >
-    <input type="text" value="" placeholder="账号" />
-    <input type="password" value="" placeholder="密码" />
-    <button type="primary">登录</button>
+    <input class="login-input" type="text" value="" placeholder="账号" />
+    <input class="login-input" type="password" value="" placeholder="密码" />
+    <button class="login-button" type="primary"  :loading="true" hover-class="none" disabled>登录</button>
   </view>
 </template>
 
@@ -10,8 +10,6 @@
 export default {
   data() {
     return {
-      // uni-app除H5外，css无法加载本地图片
-      loginPhoto: '/static/images/home.png'
     }
   }
 }
@@ -21,11 +19,24 @@ export default {
  @import '~@/style/photoSite';
  
   .login-contenr { 
+    box-sizing: border-box;
     width: 100%;
     background-image: url($loginBackground);
     background-size: 100%;
     background-repeat: no-repeat;
-    padding-top: 240px;
+    display: flex;
+    flex-direction: column;
+    padding: 200px 20px 0px 20px;
+    .login-input {
+      border-radius: 45px;
+      height: 45px;
+      box-shadow: 0 0 8px 2px #bdb1b1;
+      margin-bottom: 16px;
+      padding: 0px 20px;
+    }
+    .login-button{
+        width: 100%;
+    }
   }
 </style>
  

@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/home/index",
     "pages/receiving/index",
     "pages/receiving/details/index",
     "pages/login/index"
@@ -19,7 +19,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/home/index",
         "iconPath": "static/images/menu1.png",
         "selectedIconPath": "static/images/menu1.png",
         "text": "组件"

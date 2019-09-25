@@ -28,7 +28,7 @@
     },
     methods: {
       handleTest() {
-        console.log(this.$_language)
+        console.log(this.$f)
         uni.setNavigationBarTitle({
           title: '新的标题'
         })
