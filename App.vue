@@ -5,7 +5,7 @@
       console.log('App Launch')
     },
     onShow: function() {
-      console.log('App Show')
+      console.log('App Show:', this)
       const token = uni.getStorageSync('token')
       if (!token) {
         uni.navigateTo({
@@ -20,6 +20,9 @@
 </script>
 
 <style lang="scss">
+  
+  @import '~@/style/photoSite';
+  @import '~@/style/iconfont';
   /*每个页面公共css */
   /*  性能过差 */
   /* :not(not){

@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "wms-icon": "/components/wms-icons/wms-icons"
+  }
+}

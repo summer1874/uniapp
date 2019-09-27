@@ -3,29 +3,36 @@
     <input class="login-input" type="text" value="" placeholder="账号" />
     <input class="login-input" type="password" value="" placeholder="密码" />
     <button class="login-button" type="primary"  :loading="true" hover-class="none" disabled>登录</button>
+    <view class="language-select">
+      <text>zh/</text>
+      <wms-icon type="language1" />
+    </view>
   </view>
 </template>
 
 <script> 
+import WmsIcon from '@/components/wms-icons/wms-icons.vue'
 export default {
   data() {
     return {
     }
+  },
+  components: {
+    WmsIcon
   }
 }
 </script>
 
 <style lang="scss">
  @import '~@/style/photoSite';
- 
   .login-contenr { 
     box-sizing: border-box;
     width: 100%;
     background-image: url($loginBackground);
     background-size: 100%;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; 
     padding: 200px 20px 0px 20px;
     .login-input {
       border-radius: 45px;

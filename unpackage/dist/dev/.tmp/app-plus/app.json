@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/receiving/index",
+    "pages/receiving/details/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#409eff",
+    "backgroundColor": "#F8F8F8",
+    "navigationBarShadow": "grey",
+    "enablePullDownRefresh": true
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "wms-test",
+  "compilerVersion": "2.3.3",
+  "usingComponents": {}
+}
